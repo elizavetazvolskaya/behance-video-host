@@ -2,25 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Embedded Video</title>
+  <title>Video</title>
   <style>
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
       background: black;
-      overflow: hidden;
     }
     video {
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
+      display: block;
+      width: 1920px;
+      height: 1080px;
+      margin: 0 auto;
     }
   </style>
 </head>
 <body>
-  <video autoplay muted playsinline loop controlsList="nodownload nofullscreen noremoteplayback" onloadedmetadata="this.muted = false">
-    <source src="Видео без названия — сделано в Clipchamp.mp4" type="video/mp4">
+  <video autoplay muted playsinline loop controls>
+    <source src="video.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </body>
 </html>
+
